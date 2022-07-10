@@ -1,7 +1,5 @@
 package standard
 
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper
-
 /**
  * @author 赵世敏
  * @date 2022/7/7
@@ -15,6 +13,14 @@ object Extends {
     println("*******************")
     val son1:Son1 = new Son1(name = "alice",age =18,id = 1001)
     son1.printInfo()
+
+    //动态绑定???
+    def printInfo(per1: Per1): Unit ={
+      per1.printInfo()
+    }
+    println("*******************")
+    printInfo(son)
+    printInfo(son1)
   }
 }
 
