@@ -4,7 +4,7 @@ package collection
  * @author 赵世敏
  * @date 2022/7/15
  *       1208676641@qq.com
- * @description 列表list
+ * @description 不可变列表list
  */
 object ListDemo {
   def main(args: Array[String]): Unit = {
